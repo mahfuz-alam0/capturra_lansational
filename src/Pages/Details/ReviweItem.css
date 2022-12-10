@@ -1,0 +1,19 @@
+.main_container{
+    border: 2px solid #e6e6e6;
+    width: 500px;
+    margin: auto;
+}
+.image{
+    width: 70px
+}
+.up_section{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+.fead-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
