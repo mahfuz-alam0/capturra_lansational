@@ -15,7 +15,6 @@ const Slider = () => {
             .then(json => setimages(json))
     }, []);
 
-
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },

@@ -3,9 +3,6 @@ import './ReviweItem.css';
 
 const ReviweItem = ({ review }) => {
 
-    // const { name, comment, feedback, img } = review;
-
-
     return (
         <div className='my-5'>
             <div className='main_container rounded-md p-2'>
@@ -28,7 +25,6 @@ const ReviweItem = ({ review }) => {
                 </div>
                 <p> {review?.comment}</p>
             </div>
-            
         </div>
     );
 };

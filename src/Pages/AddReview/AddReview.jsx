@@ -6,15 +6,11 @@ import { FaAngleLeft } from "react-icons/fa";
 import useTitle from '../../Hooks/useTitle';
 
 const AddReview = () => {
+
     useTitle('Add Review')
     const navigate = useNavigate();
-
     const { user, sign_out } = React.useContext(AuthContext);
-
     const data = useLoaderData();
-    console.log(data.category);
-    console.log(user.displayName);
-
     const date = new DateObject();
     const date1 = date.format("YYYY/MM/DD hh:mm:ss.SSS");
 

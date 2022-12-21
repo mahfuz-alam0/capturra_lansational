@@ -9,11 +9,8 @@ const EditReview = () => {
 
     useTitle('Edit Review')
     const navigate = useNavigate();
-
     const { user } = React.useContext(AuthContext);
-
     const data = useLoaderData();
-
     const date = new DateObject();
     const date1 = date.format("YYYY/MM/DD hh:mm:ss.SSS");
 
@@ -27,7 +24,6 @@ const EditReview = () => {
         const time = date1;
         const feedback = form.feadback.value;
         const img = user.photoURL
-
         const review = { name, email, comment, category, time, feedback, img };
 
         fetch(`https://capturra-lensational-server.vercel.app/my_reviews/${data._id}`, {
@@ -43,7 +39,6 @@ const EditReview = () => {
                 if (data.modifiedCount) {
                     alert('Review Updated Successfully');
                     navigate(-1);
-                    // form.reset();
                 }
             })
             .catch(err => console.log(err))

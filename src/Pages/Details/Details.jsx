@@ -6,8 +6,8 @@ import ReviweItem from './ReviweItem';
 import useTitle from '../../Hooks/useTitle';
 
 const Details = () => {
-    useTitle('Details')
 
+    useTitle('Details')
     const [reviews, set_reviews] = React.useState([]);
     const detils = useLoaderData();
     const { _id, service, price, discription, img } = detils;
@@ -23,8 +23,6 @@ const Details = () => {
             .then(res => res.json())
             .then(data => set_reviews(data))
     }, [detils]);
-
-
 
     return (
         <div className='max-w-screen-xl mx-auto mb-8'>
